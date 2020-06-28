@@ -7,3 +7,10 @@ $('.white-box').hover(function(){
   }, function(){
   $(this).css("background-color", "#FFFFFF");
 });
+
+// $('.panel-group').hover(function(){
+//     console.log("Here");
+//   $(this).css("background-color", "#FFFFFF");
+//   }, function(){
+//   $(this).css("background-color", "#DCDCDC");
+// });
