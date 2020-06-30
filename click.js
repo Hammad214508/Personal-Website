@@ -8,7 +8,7 @@ $('.white-box').hover(function(){
   $(this).css("background-color", "#FFFFFF");
 });
 
-// $('.panel-group').hover(function(){
+// $('.panel-default').hover(function(){
 //     console.log("Here");
 //   $(this).css("background-color", "#FFFFFF");
 //   }, function(){
