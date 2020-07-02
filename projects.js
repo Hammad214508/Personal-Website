@@ -11,16 +11,6 @@ $(document).ready(function(){
              link: "Projects/blog.html"
          },
          {
-             title:"Meme Maker",
-             description:
-                "I developed a full-featured web application using Django framework "+
-                "and Python. It is a social media styled application where different "+
-                "users can post e.g. blog posts, twitter updates and similar posts.",
-             tools:"Python",
-             link: "https://github.com/Hammad214508/Meme-maker"
-
-         },
-         {
              title:"Database System for a Department Store",
              description:
                  "A simple meme maker application. User needs to choose a meme "+
@@ -37,6 +27,45 @@ $(document).ready(function(){
                  "ARP poisoning attack and blacklisted URL detection.",
              tools:"C",
              link:"Projects/intrusion_detection.html"
+         },
+         {
+             title:"Resolution proof solver",
+             description:
+                   "This is a resolution theorem prover, given a propositional formula it is it converts it into "+
+                   "CNF and then applies the resolution algorithm letting you know if the given formula is a tautology "+
+                   "or not.",
+             tools:"Prolog",
+             link:"Projects/resolution.html"
+         },
+         {
+             title:"Meme Maker",
+             description:
+                "I developed a full-featured web application using Django framework "+
+                "and Python. It is a social media styled application where different "+
+                "users can post e.g. blog posts, twitter updates and similar posts.",
+             tools:"Python",
+             link: "https://github.com/Hammad214508/Meme-maker"
+
+         },
+         {
+             title:"PLM compiler",
+             description:
+                   "Implement a parser (along with a lexer) that recognizes PLM programs. "+
+                   "Then extended the parser to an evaluator,  PLM being a simple programming "+
+                   "language that allows users to write code that computes non-negative integers.",
+
+             tools:"JavaCC",
+             link:"Projects/compiler.html"
+         },
+         {
+             title:"Derivative Trade Application",
+             description:
+                "A prototype system that can be used to monitor derivative trade data, "+
+                "worked five other course-mates which really enhanced my teamwork skills "+
+                "and leadership skills as I was the project manager.",
+             tools:"Python, Django, SQL, HTML, CSS",
+             link: "derivate_trade.html"
+
          },
          {
              title:"Snake Game for Mathematics Revision",
@@ -74,13 +103,14 @@ $(document).ready(function(){
              link:"Projects/robot_maze.html"
          },
          {
-             title:"Timetable Scheduler",
+             title:"Meme Maker",
              description:
-                  "The goal of this project is to generate a timetable for a week of lectures and labs. A set of tutors and a set of modules are given, "+
-                  "a tutor has a list of topics which represents its expertise and a module has as list of topics it covers. "+
-                  "This was extended so that it produces timtables that will result with the lowest cost.",
-             tools:"Java",
-             link:"Projects/timetable.html"
+                  "I developed a full-featured web application using Django framework "+
+                  "and Python. It is a social media styled application where different "+
+                  "users can post e.g. blog posts, twitter updates and similar posts.",
+             tools:"Python",
+             link: "https://github.com/Hammad214508/Meme-maker"
+
          },
          {
              title:"Witter",
@@ -90,7 +120,12 @@ $(document).ready(function(){
              tools:"Java",
              link:"Projects/witter.html"
          },
-
+         {
+             title:"",
+             description:"",
+             tools:"",
+             link:""
+         },
 
      ];
 
@@ -111,9 +146,9 @@ $(document).ready(function(){
      };
 
      $.fn.add_event = function(){
-         $('.white-box').on('click',function() {
-           window.location.href = $(this).attr('href');
-         })
+         // $('.white-box').on('click',function() {
+         //   window.location.href = $(this).attr('href');
+         // })
          $('.white-box').hover(function(){
            $(this).css("background-color", "#DCDCDC");
            }, function(){
@@ -125,7 +160,7 @@ $(document).ready(function(){
     parent = $("#projects-container");
     var length = Projects.length;
     for(var i = 0; i < length; i++){
-        if(i % 3 == 0){
+        if (i % 3 == 0){
             var row = $("<div class='row top-buffer'>");
             parent.append(row);
         }
@@ -135,8 +170,8 @@ $(document).ready(function(){
         link = Projects[i]["link"];
         var proj = $.fn.get_project(title, description, tools, link, i);
         $.fn.add_event();
-
         row.append(proj);
     }
+    $("#project_"+(length-1)).hide();
 
 });
