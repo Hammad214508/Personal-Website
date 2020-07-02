@@ -62,3 +62,7 @@ body {
 .top-buffer {
     margin-bottom:50px;
 }
+
+.big-li li {
+    font-size: 20px;
+}

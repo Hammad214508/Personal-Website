@@ -29,6 +29,69 @@ $(document).ready(function(){
              tools:"Java, JDBC, SQL",
              link:"Projects/database.html"
          },
+         {
+             title:"Intrusion detection system",
+             description:
+                 "This program is an intrusion detection system that produces a report of all the "+
+                 "malicious activity detected when the program exits. This includes SYN attack detection, "+
+                 "ARP poisoning attack and blacklisted URL detection.",
+             tools:"C",
+             link:"Projects/intrusion_detection.html"
+         },
+         {
+             title:"Snake Game for Mathematics Revision",
+             description:
+                  "I developed a snake game (just like Nokia phone game, but with many more features) for practising mathematics, "+
+                   "making it fun and a learning method.",
+             tools:"Python, Pygame, SQL",
+             link:"Projects/snake_game.html"
+         },
+         {
+             title:"Mastermind",
+             description:
+                  "A Haskell console program that simulates a player vs computer game of the board-game Mastermind. The computer was "+
+                  "made to solve a game in 5 moves or less utilising Knuth's mastermind algorithm. This project is my first using a "+
+                  "functional programming language.",
+             tools:"Haskell",
+             link:"Projects/mastermind.html"
+         },
+         {
+             title:"Robot Arm",
+             description:
+                 "The aim of this project was to control the robot arm using C programming language, and solve "+
+                 "the ”Tower of Hanoi” problem. In order to solve the problem, a solution algorithm was first designed "+
+                 "and then implemented in C.",
+             tools:"C",
+             link:"Projects/robot_arm.html"
+         },
+         {
+             title:"Robot Maze",
+             description:
+                   "Programmed a controller for a robot in a maze which can detect adjacent cells in the maze and uses its current position "+
+                   "and state to determine the direction it will move. Improved it by using data from the first run to traverse the maze more efficiently "+
+                   "the second time.",
+             tools:"Java",
+             link:"Projects/robot_maze.html"
+         },
+         {
+             title:"Timetable Scheduler",
+             description:
+                  "The goal of this project is to generate a timetable for a week of lectures and labs. A set of tutors and a set of modules are given, "+
+                  "a tutor has a list of topics which represents its expertise and a module has as list of topics it covers. "+
+                  "This was extended so that it produces timtables that will result with the lowest cost.",
+             tools:"Java",
+             link:"Projects/timetable.html"
+         },
+         {
+             title:"Witter",
+             description:
+                  "Implemented various data structures to store Users, Weets and Followers for a fictional Twitter clone called 'Witter'. They were designed "+
+                  "to optimally perform some tasks, e.g. finding the common followers, the trending weets, most popular users.",
+             tools:"Java",
+             link:"Projects/witter.html"
+         },
+
+
      ];
 
      $.fn.get_project = function(title, description, tools, link, i){
