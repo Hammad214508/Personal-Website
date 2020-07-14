@@ -7,6 +7,8 @@ $(document).ready(function(){
     var size = 3;
     var april_rows = []
     var may_rows = []
+    var june_rows = []
+    var july_rows = []
 
     $.fn.splitProblems = function(){
         while (April.length > 0)
@@ -14,12 +16,18 @@ $(document).ready(function(){
 
         while (May.length > 0)
             may_rows.push(May.splice(0, size));
-    }
 
+        while (June.length > 0)
+            june_rows.push(June.splice(0, size));
+
+        while (July.length > 0)
+            july_rows.push(July.splice(0, size));
+    }
 
 
     $(".month").on('click', function(){
         var month = $(this)[0].id;
+
         $(".month-data").hide();
         $("#"+month+"_data").show();
         if (month == "april"){
@@ -28,7 +36,14 @@ $(document).ready(function(){
         else if (month == "may") {
             month_row = may_rows;
         }
+        else if (month == "june"){
+            month_row = june_rows;
+        }
+        else if (month == "july"){
+            month_row = july_rows;
+        }
 
+        $("#"+month+"_problems").empty()
         for(var row in month_row){
             $("#"+month+"_problems").append($.fn.projects_row(month_row[row]));
             $("#"+month+"_problems").append("<br>")
@@ -122,6 +137,58 @@ $(document).ready(function(){
         "Day 30 - K Closest Points to Origin",
         "Day 31 - Edit Distance"
     ];
+
+    June =
+    [
+        "Day 1 - Invert Binary Tree",
+        "Day 2 - Delete Node in a Linked List",
+        "Day 3 - Two City Scheduling",
+        "Day 4 - Reverse String",
+        "Day 5 - Random Pick with Weight",
+        "Day 6 - Queue Reconstruction by Height",
+        "Day 7 - Coin Change 2",
+        "Day 8 - Power of Two",
+        "Day 9 - Is Subsequence",
+        "Day 10 - Search Insert Position",
+        "Day 11 - Sort Colours",
+        "Day 12 - Insert Delete GetRandom O(1)",
+        "Day 13 - Largest Divisible Subset",
+        "Day 14 - Cheapest Flights Within K Stops",
+        "Day 15 - Serach in a Binary Tree",
+        "Day 16 - Validate IP Address",
+        "Day 17 - Surrounded Regions",
+        "Day 18 - H-Index II",
+        "Day 19 - Longest Duplicate Substring",
+        "Day 20 - Permutation Sequence",
+        "Day 21 - Dungeon Game",
+        "Day 22 - Single Number II",
+        "Day 23 - Count Complete Binary Tree Nodes",
+        "Day 24 - Unique Binary Search Trees",
+        "Day 25 - Find the Duplicate Number",
+        "Day 26 - Sum Root to Leaf Numbers",
+        "Day 27 - Perfect Squares",
+        "Day 28 - Reconstruct Itinerary",
+        "Day 29 - Unique Paths",
+        "Day 30 - Word Seach II"
+    ];
+
+    July =
+    [
+        "Day 1 - Arranging Coins",
+        "Day 2 - Binary Tree Level Order Traversal II",
+        "Day 3 - Prison Cells After N Days",
+        "Day 4 - Ugly Number II",
+        "Day 5 - Hamming Distance",
+        "Day 6 - Plus One",
+        "Day 7 - Island Perimeter",
+        "Day 8 - Three Sum",
+        "Day 9 - Maximum Width of Binary Tree",
+        "Day 10 - Flatten a Multilevel Doubly Linked List",
+        "Day 11 - Subsets",
+        "Day 12 - Reverse Bits",
+        "Day 13 - Same Tree",
+        "Day 14 - Angle Between Hands of a Clock"
+    ]
 
     $.fn.splitProblems();
 

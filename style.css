@@ -6,6 +6,10 @@ body {
   font-size:20px;
 }
 
+.git-icon-size-lg{
+    font-size:35px;
+}
+
 .project-git {
     font-size:37px;
 }
@@ -69,4 +73,8 @@ body {
 
 .leetcode-font{
     font-size:20px;
+}
+
+.problems-font{
+    font-size:15px;
 }
