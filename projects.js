@@ -135,7 +135,9 @@ $(document).ready(function(){
 
      $.fn.add_event = function(){
          $('.white-box').on('click',function() {
-           window.location.href = $(this).attr('href');
+             if ($(this).attr('href') != "undefined"){
+                 window.location.href = $(this).attr('href');
+             }
          })
          $('.white-box').hover(function(){
            $(this).css("background-color", "#DCDCDC");
@@ -157,9 +159,9 @@ $(document).ready(function(){
         tools = Projects[i]["tools"];
         link = Projects[i]["link"];
         var proj = $.fn.get_project(title, description, tools, link, i);
-        $.fn.add_event();
         row.append(proj);
     }
+    $.fn.add_event();
     $("#project_"+(length-1)).hide();
 
 });

@@ -75,6 +75,14 @@ body {
     font-size:20px;
 }
 
+.about-font{
+    font-size:20px;
+}
+
+.about-font-sm{
+    font-size:17px;
+}
+
 .problems-font{
     font-size:15px;
 }
