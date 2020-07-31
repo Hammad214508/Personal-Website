@@ -187,9 +187,25 @@ $(document).ready(function(){
         "Day 11 - Subsets",
         "Day 12 - Reverse Bits",
         "Day 13 - Same Tree",
-        "Day 14 - Angle Between Hands of a Clock"
+        "Day 14 - Angle Between Hands of a Clock",
+        "Day 15 - Reverse Words in a String",
+        "Day 16 - Pow(x, n)",
+        "Day 17 - Top K Frequent Elements",
+        "Day 18 - Course Schedule II",
+        "Day 19 - Add Binary",
+        "Day 20 - Remove Linked List Elements",
+        "Day 21 - Word Search",
+        "Day 22 - Binary Tree Ziz Zag Level Order Traversal",
+        "Day 23 - Single Number III",
+        "Day 24 - All Paths From Source to Target",
+        "Day 25 - Find Minimum in Rotated Sorted Array II",
+        "Day 26 - Add Digits",
+        "Day 27 - Construct Binary Tree from Inorder and Postorder Traversal",
+        "Day 28 - Task Scheduler",
+        "Day 29 - Best Time to Buy and Sell Stock with Cooldown",
+        "Day 30 - Word Break II",
+        "Day 31 - Climbing Stairs"
     ]
-
     $.fn.splitProblems();
 
 });
