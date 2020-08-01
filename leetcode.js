@@ -4,11 +4,14 @@ $(document).ready(function(){
     $("#may_data").hide();
     $("#june_data").hide();
     $("#july_data").hide();
+    $("#august_data").hide();
+
     var size = 3;
     var april_rows = []
     var may_rows = []
     var june_rows = []
     var july_rows = []
+    var august_rows = []
 
     $.fn.splitProblems = function(){
         while (April.length > 0)
@@ -22,6 +25,9 @@ $(document).ready(function(){
 
         while (July.length > 0)
             july_rows.push(July.splice(0, size));
+
+        while (August.length > 0)
+            august_rows.push(August.splice(0, size));
     }
 
 
@@ -41,6 +47,9 @@ $(document).ready(function(){
         }
         else if (month == "july"){
             month_row = july_rows;
+        }
+        else if (month == "august"){
+            month_row = august_rows;
         }
 
         $("#"+month+"_problems").empty()
@@ -205,6 +214,11 @@ $(document).ready(function(){
         "Day 29 - Best Time to Buy and Sell Stock with Cooldown",
         "Day 30 - Word Break II",
         "Day 31 - Climbing Stairs"
+    ]
+
+    August =
+    [
+        "Day 1 - Detect Capital"
     ]
     $.fn.splitProblems();
 
