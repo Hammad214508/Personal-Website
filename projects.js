@@ -11,6 +11,25 @@ $(document).ready(function(){
              link: "https://github.com/Hammad214508/Blog-Application"
          },
          {
+             title:"Meme Maker <i class=\"fa fa-github-square\"></i>",
+             description:
+                "I made a meme maker using Python, given a set of templates and fonts, it"+
+                "can generate memes based on the user input. "+
+                "A modification of this (branch on git) was used in a WhatsApp bot for a friend.",
+             tools:"Python",
+             link: "https://github.com/Hammad214508/Meme-maker"
+
+         },
+         {
+             title:"Derivative Trade Application",
+             description:
+                "A prototype system that can be used to monitor derivative trade data, "+
+                "worked five other course-mates which really enhanced my teamwork skills "+
+                "and leadership skills as I was the project manager.",
+             tools:"Python, Django, SQL, HTML, CSS",
+             // link: "derivate_trade.html"
+         },
+         {
              title:"Database System for a Department Store",
              description:
                  "A simple meme maker application. User needs to choose a meme "+
@@ -38,16 +57,6 @@ $(document).ready(function(){
              // link:"Projects/resolution.html"
          },
          {
-             title:"Meme Maker <i class=\"fa fa-github-square\"></i>",
-             description:
-                "I made a meme maker using Python, given a set of templates and fonts, it"+
-                "can generate memes based on the user input. "+
-                "A modification of this (branch on git) was used in a WhatsApp bot for a friend.",
-             tools:"Python",
-             link: "https://github.com/Hammad214508/Meme-maker"
-
-         },
-         {
              title:"PLM compiler",
              description:
                    "Implement a parser (along with a lexer) that recognizes PLM programs. "+
@@ -55,15 +64,6 @@ $(document).ready(function(){
                    "language that allows users to write code that computes non-negative integers.",
              tools:"JavaCC",
              // link:"Projects/compiler.html"
-         },
-         {
-             title:"Derivative Trade Application",
-             description:
-                "A prototype system that can be used to monitor derivative trade data, "+
-                "worked five other course-mates which really enhanced my teamwork skills "+
-                "and leadership skills as I was the project manager.",
-             tools:"Python, Django, SQL, HTML, CSS",
-             // link: "derivate_trade.html"
          },
          {
              title:"Snake Game for Mathematics Revision",
