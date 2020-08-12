@@ -90,3 +90,7 @@ body {
 .problems-font{
     font-size:15px;
 }
+
+.bottom-buffer{
+    margin-bottom: 2em; 
+}
