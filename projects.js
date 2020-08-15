@@ -119,7 +119,7 @@ $(document).ready(function(){
 
      $.fn.get_project = function(title, description, tools, link, i){
          template =
-             "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-12 col-sm-12\">"+
+             "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12\">"+
              "  <div class=\"white-box\" href=\""+link+"\">"+
              "      <h3>"+title+"</h3>"+
              "      <p>"+

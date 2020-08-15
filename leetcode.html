@@ -14,16 +14,25 @@
         <!-- START NAVIGATION BAR -->
         <nav class="navbar navbar-inverse">
           <div class="container-fluid">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
             <div class="navbar-header">
               <a class="navbar-brand" href="index.html">Hammad Muhammad Mehmood</a>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="leetcode.html">Leetcode</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="https://github.com/Hammad214508/Personal-Website" class="btn btn-social-icon btn-github git-icon-size"><span class="fa fa-github"></span></a>
-              </li>
-            </ul>
+            <div id="main-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li class="active"><a href="leetcode.html">Leetcode</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="https://github.com/Hammad214508/Personal-Website" class="btn btn-social-icon btn-github git-icon-size"><span class="fa fa-github"></span></a>
+                  </li>
+                </ul>
+            </div>
           </div>
         </nav>
         <!-- END NAVIGATION BAR -->
@@ -45,51 +54,54 @@
                 I'm going to solving these problems everyday using my current knowledge, so they might not be optimal but they'll surely solve the problem efficiently.
             </p>
 
-            <div class="row container" style="margin-bottom: 1em;">
-                <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4">
-                    <button id="april" class="btn btn-primary btn-lg month">
-                        April
-                    </button>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4">
-                    <button id="may" class="btn btn-primary btn-lg month">
-                        May
-                    </button>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4">
-                    <button id="june" class="btn btn-primary btn-lg month">
-                        June
-                    </button>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4">
-                    <button id="july" class="btn btn-primary btn-lg month">
-                        July
-                    </button>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4">
-                    <button id="august" class="btn btn-primary btn-lg month">
-                        August
-                    </button>
+            <div class="container-fluid">
+                <div class="row" style="margin-bottom: 1em;">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+                        <button id="april" class="btn btn-primary btn-lg month">
+                            April
+                        </button>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+                        <button id="may" class="btn btn-primary btn-lg month">
+                            May
+                        </button>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+                        <button id="june" class="btn btn-primary btn-lg month">
+                            June
+                        </button>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+                        <button id="july" class="btn btn-primary btn-lg month">
+                            July
+                        </button>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-4">
+                        <button id="august" class="btn btn-primary btn-lg month">
+                            August
+                        </button>
+                    </div>
                 </div>
             </div>
+
 
 
             <div class="month-data container-fluid" id="april_data">
                 <p style="font-size:25px"><strong>April</strong></p>
                 <div class="row p-4">
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                         <a href="https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/" style="background-color:black;">
                             <button class="btn btn-primary">
                                 <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" height="20px" alt="LeetCode">
                             </button>
                         </a>
                     </div>
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                          <a href="https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/April" class="btn btn-primary btn-colour">
                              <i class="fa fa-github-square"></i> GitHub
                          </a>
                     </div>
-                    <div class="col-xl-10 col-xl-1 col-lg-1 col-md-4 col-sm-40 col-md-10 col-sm-10"></div>
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10"></div>
                 </div>
                 <br>
                 <h4>Problems solved:</h4>
@@ -100,19 +112,19 @@
             <div class="month-data container-fluid" id="may_data">
                 <p style="font-size:25px"><strong>May</strong></p>
                 <div class="row p-4">
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                         <a href="https://leetcode.com/explore/featured/card/may-leetcoding-challenge/" style="background-color:black;">
                             <button class="btn btn-primary">
                                 <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" height="20px" alt="LeetCode">
                             </button>
                         </a>
                     </div>
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                          <a href="https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/May" class="btn btn-primary btn-colour">
                              <i class="fa fa-github-square"></i> GitHub
                          </a>
                     </div>
-                    <div class="col-xl-10 col-xl-1 col-lg-1 col-md-4 col-sm-40 col-md-10 col-sm-10"></div>
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10"></div>
                 </div>
                 <br>
                 <h4>Problems solved:</h4>
@@ -123,19 +135,19 @@
             <div class="month-data container-fluid" id="june_data">
                 <p style="font-size:25px"><strong>June</strong></p>
                 <div class="row p-4">
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                         <a href="https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/" style="background-color:black;">
                             <button class="btn btn-primary">
                                 <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" height="20px" alt="LeetCode">
                             </button>
                         </a>
                     </div>
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                          <a href="https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/June" class="btn btn-primary btn-colour">
                              <i class="fa fa-github-square"></i> GitHub
                          </a>
                     </div>
-                    <div class="col-xl-10 col-xl-1 col-lg-1 col-md-4 col-sm-40 col-md-10 col-sm-10"></div>
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10"></div>
                 </div>
                 <br>
                 <h4>Problems solved:</h4>
@@ -146,19 +158,19 @@
             <div class="month-data container-fluid" id="july_data">
                 <p style="font-size:25px"><strong>July</strong></p>
                 <div class="row p-4">
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                         <a href="https://leetcode.com/explore/challenge/card/july-leetcoding-challenge" style="background-color:black;">
                             <button class="btn btn-primary">
                                 <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" height="20px" alt="LeetCode">
                             </button>
                         </a>
                     </div>
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                          <a href="https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/July" class="btn btn-primary btn-colour">
                              <i class="fa fa-github-square"></i> GitHub
                          </a>
                     </div>
-                    <div class="col-xl-10 col-xl-1 col-lg-1 col-md-4 col-sm-40 col-md-10 col-sm-10"></div>
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10"></div>
                 </div>
                 <br>
                 <h4>Problems solved:</h4>
@@ -169,19 +181,19 @@
             <div class="month-data container-fluid" id="august_data">
                 <p style="font-size:25px"><strong>August</strong></p>
                 <div class="row p-4">
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 col-lg-1 col-md-4 col-sm-4 col-xs-6">
                         <a href="https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/" style="background-color:black;">
                             <button class="btn btn-primary">
                                 <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" height="20px" alt="LeetCode">
                             </button>
                         </a>
                     </div>
-                    <div class="col-xl-1 col-xl-1 col-lg-1 col-md-4 col-sm-4 col-md-1 col-sm-1">
+                    <div class="col-xl-1 c col-lg-1 col-md-4 col-sm-4 col-xs-6">
                          <a href="https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/August" class="btn btn-primary btn-colour">
                              <i class="fa fa-github-square"></i> GitHub
                          </a>
                     </div>
-                    <div class="col-xl-10 col-xl-1 col-lg-1 col-md-4 col-sm-40 col-md-10 col-sm-10"></div>
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10"></div>
                 </div>
                 <br>
                 <h4>Problems solved:</h4>
