@@ -95,6 +95,12 @@ body {
     margin-bottom: 2em;
 }
 
+.bottom-buffer-sm{
+    margin-bottom: 1em;
+}
+
+
+
 .panel-title>a, .panel-title>a:active{
     display:block;
     padding:15px;
