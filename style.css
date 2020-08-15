@@ -113,8 +113,13 @@ body {
    float: right;
    transition: all 0.5s;
 }
+
 .panel-heading.active a:before {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+.col-xs-1 {
+    width: 25%;
 }
