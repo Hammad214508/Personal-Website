@@ -126,6 +126,15 @@ body {
     transform: rotate(180deg);
 }
 
-/* .col-xs-1 {
-    width: 25%;
-} */
+.navbar-toggle {
+  position: absolute;
+  right: 0;
+}
+
+@media (max-width: 786px) {
+  .navbar-brand {
+    padding-right: 60px;
+    height: auto;
+  }
+
+}
