@@ -1,5 +1,55 @@
 $(document).ready(function(){
 
+    $.fn.month_button_template = function(month){
+        var monthCapitalized = month.charAt(0).toUpperCase() + month.slice(1);
+        return (
+            '<div class="col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-4 bottom-buffer-sm">'+
+            '    <button id="'+month+'" class="btn btn-primary btn-lg month">'+
+                    monthCapitalized+
+            '    </button>'+
+            '</div>'
+        )
+    }
+
+    $.fn.month_template = function(month, leetcode_url, github_url){
+        var monthCapitalized = month.charAt(0).toUpperCase() + month.slice(1)
+        return (
+            '<div class="month-data container-fluid" id="'+month+'_data">'+
+            '    <p style="font-size:25px"><strong>'+monthCapitalized+'</strong></p>'+
+            '    <div class="row p-4 bottom-buffer">'+
+            '        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-4">'+
+            '            <a href="'+leetcode_url+'" style="background-color:black;">'+
+            '                <button class="btn btn-primary">'+
+            '                    <img src="https://assets.leetcode.com/static_assets/public/webpack_bundles/images/LeetCode_nav.4d940ca72.png" height="20px" alt="LeetCode">'+
+            '                </button>'+
+            '            </a>'+
+            '        </div>'+
+            '        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-4">'+
+            '             <a href="'+github_url+'" class="btn btn-primary btn-colour">'+
+            '                 <i class="fa fa-github-square"></i> GitHub'+
+            '             </a>'+
+            '        </div>'+
+            '    </div>'+
+            '    <h4>Problems solved:</h4>'+
+            '    <div id="'+month+'_problems" class="problems-font"></div>'+
+            '</div>'
+        )
+    }
+
+    var parent = $("#month_buttons");
+    parent.append($.fn.month_button_template("april"));
+    parent.append($.fn.month_button_template("may"));
+    parent.append($.fn.month_button_template("june"));
+    parent.append($.fn.month_button_template("july"));
+    parent.append($.fn.month_button_template("august"));
+
+    var parent = $("#main_leetcode");
+    parent.append($.fn.month_template("april", "https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/April"))
+    parent.append($.fn.month_template("may", "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/May"));
+    parent.append($.fn.month_template("june", "https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/June"));
+    parent.append($.fn.month_template("july", "https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/July"));
+    parent.append($.fn.month_template("august", "https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/August"));
+
     $("#april_data").hide();
     $("#may_data").hide();
     $("#june_data").hide();
@@ -55,7 +105,6 @@ $(document).ready(function(){
         $("#"+month+"_problems").empty()
         for(var row in month_row){
             $("#"+month+"_problems").append($.fn.projects_row(month_row[row]));
-            $("#"+month+"_problems").append("<br>")
         }
     });
 
@@ -65,18 +114,19 @@ $(document).ready(function(){
         var third = row[2] ? row[2] : "";
         return (
         '<div class="row">'+
-        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12">'+
+        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
                 first +
         '    </div>'+
-        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12">'+
+        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
                 second +
         '    </div>'+
-        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12">'+
+        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
                 third +
         '    </div>'+
         '</div>'
         );
     }
+
 
     April =
     [
@@ -229,9 +279,17 @@ $(document).ready(function(){
         "Day 9 - Rotting Oranges",
         "Day 10 - Excel Sheet Column Number",
         "Day 11 - H-Index",
-        "Day 12 - Pascal's Triangle II"
+        "Day 12 - Pascal's Triangle II",
+        "Day 13 - Iterator for Combination",
+        "Day 14 - Longest Palindrome",
+        "Day 15 - Non-overlapping Intervals",
+        "Day 16 - Best Time to Buy and Sell Stock III",
+        "Day 17 - Distribute Candies to People",
+        "Day 18 - Numbers With Same Consecutive Differences",
+        "Day 19 - Goat Latin"
     ]
 
     $.fn.splitProblems();
+    $("#april").trigger('click');
 
 });

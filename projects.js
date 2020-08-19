@@ -119,7 +119,7 @@ $(document).ready(function(){
 
      $.fn.get_project = function(title, description, tools, link, i){
          template =
-             "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12\">"+
+             "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 bottom-buffer\">"+
              "  <div class=\"white-box\" href=\""+link+"\">"+
              "      <h3>"+title+"</h3>"+
              "      <p>"+
@@ -151,7 +151,7 @@ $(document).ready(function(){
     var length = Projects.length;
     for(var i = 0; i < length; i++){
         if (i % 3 == 0){
-            var row = $("<div class='row top-buffer'>");
+            var row = $("<div class='row'>");
             parent.append(row);
         }
         title = Projects[i]["title"];

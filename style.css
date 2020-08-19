@@ -63,32 +63,28 @@ body {
 
 }
 
-.top-buffer {
-    margin-bottom:50px;
-}
-
 .big-li li {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .leetcode-font{
-    font-size:20px;
+    font-size: 1.25em;
 }
 
 .about-font{
-    font-size:20px;
+    font-size: 1.25em;
 }
 
 .projects-font{
-    font-size:20px;
+    font-size: 1.25em;
 }
 
 .about-font-sm{
-    font-size:17px;
+    font-size: 1.0625em
 }
 
 .problems-font{
-    font-size:15px;
+    font-size: 0.9375em;
 }
 
 .bottom-buffer{
@@ -99,7 +95,13 @@ body {
     margin-bottom: 1em;
 }
 
+.top-buffer {
+    margin-top:3.125em;
+}
 
+.top-buffer-sm {
+    margin-top:1.5em;
+}
 
 .panel-title>a, .panel-title>a:active{
     display:block;
@@ -133,7 +135,7 @@ body {
 
 @media (max-width: 786px) {
   .navbar-brand {
-    padding-right: 60px;
+    padding-right: 3.75em;
     height: auto;
   }
 
