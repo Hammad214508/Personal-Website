@@ -1,16 +1,5 @@
 $(document).ready(function(){
 
-    $.fn.month_button_template = function(month){
-        var monthCapitalized = month.charAt(0).toUpperCase() + month.slice(1);
-        return (
-            '<div class="col-xl-1 col-lg-1 col-md-2 col-sm-4 col-xs-4 bottom-buffer-sm">'+
-            '    <button id="'+month+'" class="btn btn-primary btn-lg month">'+
-                    monthCapitalized+
-            '    </button>'+
-            '</div>'
-        )
-    }
-
     $.fn.month_template = function(month, leetcode_url, github_url){
         var monthCapitalized = month.charAt(0).toUpperCase() + month.slice(1)
         return (
@@ -31,30 +20,23 @@ $(document).ready(function(){
             '        </div>'+
             '    </div>'+
             '    <h4>Problems solved:</h4>'+
-            '    <div id="'+month+'_problems" class="problems-font"></div>'+
+            '    <div id="'+month+'_problems" class="problems-font bottom-buffer"></div>'+
             '</div>'
         )
     }
 
-    var parent = $("#month_buttons");
-    parent.append($.fn.month_button_template("april"));
-    parent.append($.fn.month_button_template("may"));
-    parent.append($.fn.month_button_template("june"));
-    parent.append($.fn.month_button_template("july"));
-    parent.append($.fn.month_button_template("august"));
-
     var parent = $("#main_leetcode");
-    parent.append($.fn.month_template("april", "https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/April"))
-    parent.append($.fn.month_template("may", "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/May"));
-    parent.append($.fn.month_template("june", "https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/June"));
-    parent.append($.fn.month_template("july", "https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/July"));
-    parent.append($.fn.month_template("august", "https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/August"));
+    parent.append($.fn.month_template("April", "https://leetcode.com/explore/challenge/card/30-day-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/April"))
+    parent.append($.fn.month_template("May", "https://leetcode.com/explore/featured/card/may-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/May"));
+    parent.append($.fn.month_template("June", "https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/June"));
+    parent.append($.fn.month_template("July", "https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/July"));
+    parent.append($.fn.month_template("August", "https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/August"));
 
-    $("#april_data").hide();
-    $("#may_data").hide();
-    $("#june_data").hide();
-    $("#july_data").hide();
-    $("#august_data").hide();
+    $("#April_data").hide();
+    $("#May_data").hide();
+    $("#June_data").hide();
+    $("#July_data").hide();
+    $("#August_data").hide();
 
     var size = 3;
     var april_rows = []
@@ -80,25 +62,24 @@ $(document).ready(function(){
             august_rows.push(August.splice(0, size));
     }
 
-
-    $(".month").on('click', function(){
-        var month = $(this)[0].id;
+    $("#month").change(function(){
+        month = $(this).children("option:selected").val();
 
         $(".month-data").hide();
         $("#"+month+"_data").show();
-        if (month == "april"){
+        if (month == "April"){
             month_row = april_rows;
         }
-        else if (month == "may") {
+        else if (month == "May") {
             month_row = may_rows;
         }
-        else if (month == "june"){
+        else if (month == "June"){
             month_row = june_rows;
         }
-        else if (month == "july"){
+        else if (month == "July"){
             month_row = july_rows;
         }
-        else if (month == "august"){
+        else if (month == "August"){
             month_row = august_rows;
         }
 
@@ -107,6 +88,7 @@ $(document).ready(function(){
             $("#"+month+"_problems").append($.fn.projects_row(month_row[row]));
         }
     });
+
 
     $.fn.projects_row = function(row){
         var first = row[0] ? row[0] : "";
@@ -290,6 +272,6 @@ $(document).ready(function(){
     ]
 
     $.fn.splitProblems();
-    $("#april").trigger('click');
+    $("#month").trigger('change');
 
 });

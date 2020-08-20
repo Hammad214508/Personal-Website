@@ -39,25 +39,47 @@
           </div>
         </nav>
         <!-- END NAVIGATION BAR -->
+
         <h1 class="text-center">Leetcode
             <a href="https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge" class="btn btn-social-icon btn-github git-icon-size-lg" style="color:black;">
                 <span class="fa fa-github"></span>
             </a>
         </h1>
+        
         <div class="container-fluid leetcode-font">
-            <p class="container-fluid">
+
+            <p class="container-fluid bottom-buffer-sm">
                 LeetCode is going to be releasing a 30-Day Challenge for a few months where they will release a programming problem every day starting from April 1st,
                 which will be handpicked from their frequently asked interview questions along with 5 new problems.
                 They also have some nice rewards as incentives, but the condition is that you must solve every problem within 24 hours from the release time.
                 This is a very good challenge and opportunity for me to work on my problem solving skills and have a great time solving problems and discussing them with my friends. See:
-                <a href="https://github.com/JaydipMagan/codingpractice/tree/master/leetcode">Jaydip Magan</a>
-            <br><br>
+                <a href="https://github.com/JaydipMagan/codingpractice/tree/master/leetcode">Jaydip Magan</a>,
                 I'm going to solving these problems everyday using my current knowledge, so they might not be optimal but they'll surely solve the problem efficiently.
             </p>
 
-            <div id="main_leetcode" class="top-buffer-sm">
-                <div id="month_buttons" class="row container"></div>
+            <div class="container-fluid">
+                <div class="text-center" style="display : inline-block;">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <label>Month:</label>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="dropdown dropdown-dark">
+                                <select id="month" class="dropdown-select">
+                                    <option selected>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div id="main_leetcode"></div>
+
         </div>
 
     </body>
