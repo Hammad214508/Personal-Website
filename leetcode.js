@@ -268,7 +268,16 @@ $(document).ready(function(){
         "Day 16 - Best Time to Buy and Sell Stock III",
         "Day 17 - Distribute Candies to People",
         "Day 18 - Numbers With Same Consecutive Differences",
-        "Day 19 - Goat Latin"
+        "Day 19 - Goat Latin",
+        "Day 20 - Reorder List",
+        "Day 21 - Sort Array By Parity",
+        "Day 22 - Random Point in Non-overlapping Rectangles",
+        "Day 23 - Stream of Characters",
+        "Day 24 - Sum of Left Leaves",
+        "Day 25 - Minimum Cost For Tickets",
+        "Day 26 - Fizz Buzz",
+        "Day 27 - Find Right Interval",
+        "Day 28 - Implement Rand10() Using Rand7()"
     ]
 
     $.fn.splitProblems();
