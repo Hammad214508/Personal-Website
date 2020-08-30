@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hammad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <!-- START NAVIGATION BAR -->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">Hammad Muhammad Mehmood</a>
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <div id="main-menu" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="Projects/projects.html">Projects</a></li>
+                <li><a href="Leetcode/leetcode.html">Leetcode</a></li>
+                <li><a href="About/about.html">About</a></li>
+                <li><a href="https://github.com/Hammad214508/Personal-Website" class="btn btn-social-icon btn-github git-icon-size"><span class="fa fa-github"></span></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+        <!-- END NAVIGATION BAR -->
+
+
+        <!-- START PROFILE PICTURE AND INTRO  -->
+        <div class="container">
+            <div class="text-center">
+                <img src="Images/profile-pic.png" class="img-circle profile-pic-size" alt="Profile Picture">
+                <h3>Hammad Muhammad Mehmood</h3>
+                <h5>Full Stack Software Engineer Intern at Fairhire</h5>
+                <h5>Final Year Computer Science Student at the University of Warwick</h5>
+                <a href="https://www.linkedin.com/in/hammad-muhammad-mehmood-7460a0150" class="btn btn-primary btn-colour"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+                <a href="https://github.com/Hammad214508" class="btn btn-primary btn-colour"><i class="fa fa-github-square"></i> GitHub</a>
+                <a href="https://mycv1.s3.eu-west-2.amazonaws.com/CV.pdf" target="_blank" class="btn btn-primary btn-colour"><i class="fa fa-file"></i> Resume </a>
+
+
+            </div>
+        </div>
+        <!-- END PROFILE PICTURE AND INTRO  -->
+    </body>
+</html>

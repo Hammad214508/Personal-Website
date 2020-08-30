@@ -31,12 +31,15 @@ $(document).ready(function(){
     parent.append($.fn.month_template("June", "https://leetcode.com/explore/challenge/card/june-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/June"));
     parent.append($.fn.month_template("July", "https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/July"));
     parent.append($.fn.month_template("August", "https://leetcode.com/explore/challenge/card/august-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/August"));
+    parent.append($.fn.month_template("September", "https://leetcode.com/explore/featured/card/september-leetcoding-challenge/", "https://github.com/Hammad214508/Quarantine-Coding/tree/master/30-Day-LeetCoding-Challenge/September"));
 
     $("#April_data").hide();
     $("#May_data").hide();
     $("#June_data").hide();
     $("#July_data").hide();
     $("#August_data").hide();
+    $("#September_data").hide();
+
 
     var size = 3;
     var april_rows = []
@@ -44,6 +47,7 @@ $(document).ready(function(){
     var june_rows = []
     var july_rows = []
     var august_rows = []
+    var september_rows = []
 
     $.fn.splitProblems = function(){
         while (April.length > 0)
@@ -60,7 +64,11 @@ $(document).ready(function(){
 
         while (August.length > 0)
             august_rows.push(August.splice(0, size));
+
+        while (September.length > 0)
+            september_rows.push(September.splice(0, size));
     }
+
 
     $("#month").change(function(){
         month = $(this).children("option:selected").val();
@@ -81,6 +89,9 @@ $(document).ready(function(){
         }
         else if (month == "August"){
             month_row = august_rows;
+        }
+        else if (month == "September"){
+            month_row = september_rows;
         }
 
         $("#"+month+"_problems").empty()
@@ -277,7 +288,14 @@ $(document).ready(function(){
         "Day 25 - Minimum Cost For Tickets",
         "Day 26 - Fizz Buzz",
         "Day 27 - Find Right Interval",
-        "Day 28 - Implement Rand10() Using Rand7()"
+        "Day 28 - Implement Rand10() Using Rand7()",
+        "Day 29 - Pancake Sorting",
+        "Day 30 - Largest Component Size by Common Factor"
+    ]
+
+    September =
+    [
+
     ]
 
     $.fn.splitProblems();
