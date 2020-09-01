@@ -291,11 +291,12 @@ $(document).ready(function(){
         "Day 28 - Implement Rand10() Using Rand7()",
         "Day 29 - Pancake Sorting",
         "Day 30 - Largest Component Size by Common Factor"
+        "Day 31 - Edit Distance"
     ]
 
     September =
     [
-
+        "Day 1 - Largest Time for Given Digits"
     ]
 
     $.fn.splitProblems();
