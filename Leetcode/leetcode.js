@@ -107,13 +107,13 @@ $(document).ready(function(){
         var third = row[2] ? row[2] : "";
         return (
         '<div class="row">'+
-        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
+        '    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
                 first +
         '    </div>'+
-        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
+        '    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
                 second +
         '    </div>'+
-        '    <div class="col-xl-4 col-lg4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
+        '    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12 top-buffer-sm">'+
                 third +
         '    </div>'+
         '</div>'
@@ -296,7 +296,10 @@ $(document).ready(function(){
 
     September =
     [
-        "Day 1 - Largest Time for Given Digits"
+        "Day 1 - Largest Time for Given Digits",
+        "Day 2 - Contains Duplicate III",
+        "Day 3 - Repeated Substring Pattern",
+        "Day 4 - Partition Labels"
     ]
 
     $.fn.splitProblems();

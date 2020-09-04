@@ -108,12 +108,6 @@ $(document).ready(function(){
              tools:"Java",
              // link:"Projects/witter.html"
          },
-         {
-             title:"",
-             description:"",
-             tools:"",
-             link:""
-         },
 
      ];
 
@@ -159,9 +153,8 @@ $(document).ready(function(){
         tools = Projects[i]["tools"];
         link = Projects[i]["link"];
         var proj = $.fn.get_project(title, description, tools, link, i);
-        row.append(proj);
+        parent.append(proj);
     }
     $.fn.add_event();
-    $("#project_"+(length-1)).hide();
 
 });
