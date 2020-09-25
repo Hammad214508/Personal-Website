@@ -30,6 +30,16 @@ $(document).ready(function(){
              // link: "derivate_trade.html"
          },
          {
+             title:"Hiring Manager Game <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
+             description:
+                "A simple clicking game in which you are the hiring manager and you can hire interns, software "+
+                "engineers or senior engineers trying to be as efficient as possible managing their cost and value",
+             tools:"Jquery, HTML, CSS",
+             link: "https://hammad214508.github.io/Hiring-Game/"
+         },
+
+
+         {
              title:"Database System for a Department Store",
              description:
                  "A simple meme maker application. User needs to choose a meme "+
