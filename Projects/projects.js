@@ -30,21 +30,26 @@ $(document).ready(function(){
              // link: "derivate_trade.html"
          },
          {
+             title:"Restaurant and Food Recommender",
+             description:
+                "Web application that helps users decide where and what to eat using machine learning "+
+                "techniques. Extended so that it can handle a group of users wanting to eat together.",
+             tools:"Python, PHP, MySQL, jQuery, HTML & CSS",
+             // link: "https://hammad214508.github.io/Hiring-Game/"
+         },
+         {
              title:"Hiring Manager Game <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
              description:
-                "A simple clicking game in which you are the hiring manager and you can hire interns, software "+
-                "engineers or senior engineers trying to be as efficient as possible managing their cost and value",
-             tools:"Jquery, HTML, CSS",
+                "A simple clicking game in which you are the hiring manager and you can hire interns, software engineers or senior "+
+                "engineers. Goal is to be efficient managing their cost and value. New competitive mode added",
+             tools:"jQuery, HTML, CSS",
              link: "https://hammad214508.github.io/Hiring-Game/"
          },
-
-
          {
              title:"Database System for a Department Store",
              description:
-                 "A simple meme maker application. User needs to choose a meme "+
-                 "template, the position of the text and the text to dislay then the program "+
-                 "will generate the meme and save it.",
+                 "Using Java along with SQL to create a department store database that was subject to sophisticated queries. "+
+                 "Managing the store's inventory, orders, collections, deliveries and staff.",
              tools:"Java, JDBC, SQL",
              // link:"Projects/database.html"
          },
@@ -78,8 +83,8 @@ $(document).ready(function(){
          {
              title:"Snake Game for Mathematics Revision",
              description:
-                  "I developed a snake game (just like Nokia phone game, but with many more features) for practising mathematics, "+
-                   "making it fun and a learning method.",
+                  "Developed a snake game (Nokia phone game alike, but with many more features) with A-Level Mathematics questions, "+
+                  "making it a fun learning tool for students struggling with this subject.",
              tools:"Python, Pygame, SQL",
              // link:"Projects/snake_game.html"
          },
