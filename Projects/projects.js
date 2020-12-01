@@ -1,4 +1,20 @@
 $(document).ready(function(){
+     var bootstrap_grid_size;
+
+     $.fn.get_bootstrap_grid = function(width){
+       if(width < 768){
+          return "xs";
+       }else if(width <= 991){
+         return "sm";
+       }else if(width <= 1199){
+         return "md";
+       }else{
+         return "lg";
+       }
+     }
+
+     bootstrap_grid_size = $.fn.get_bootstrap_grid($(window).width());
+
      var Projects =
      [
          {
@@ -128,7 +144,7 @@ $(document).ready(function(){
 
      $.fn.get_project = function(title, description, tools, link, i){
          template =
-             "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 bottom-buffer\">"+
+             "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 bottom-buffer\">"+
              "  <div class=\"white-box\" href=\""+link+"\">"+
              "      <h3>"+title+"</h3>"+
              "      <p>"+
@@ -141,6 +157,7 @@ $(document).ready(function(){
              "</div>";
          return $(template);
      };
+
 
      $.fn.add_event = function(){
          $('.white-box').on('click',function() {
@@ -156,20 +173,42 @@ $(document).ready(function(){
 
     };
 
-    parent = $("#projects-container");
-    var length = Projects.length;
-    for(var i = 0; i < length; i++){
-        if (i % 3 == 0){
-            var row = $("<div class='row'>");
-            parent.append(row);
-        }
-        title = Projects[i]["title"];
-        description = Projects[i]["description"];
-        tools = Projects[i]["tools"];
-        link = Projects[i]["link"];
-        var proj = $.fn.get_project(title, description, tools, link, i);
-        parent.append(proj);
+    $.fn.get_how_many_per_row = function(){
+      if (bootstrap_grid_size == "md" || bootstrap_grid_size == "sm"){
+        return 2;
+      }else{
+        return 3;
+      }
     }
+
+    $(window).on('resize',function(){
+        new_grid_size = $.fn.get_bootstrap_grid($(window).width());
+        if (new_grid_size != bootstrap_grid_size){
+          bootstrap_grid_size = new_grid_size;
+          $.fn.render_projects();
+        }
+    });
+
+    $.fn.render_projects = function(){
+      parent = $("#projects-container");
+      parent.empty();
+      var length = Projects.length;
+      var per_row = $.fn.get_how_many_per_row();
+      for(var i = 0; i < length; i++){
+          if (i % per_row == 0){
+              var row = $("<div class='row'>");
+              parent.append(row);
+          }
+          title = Projects[i]["title"];
+          description = Projects[i]["description"];
+          tools = Projects[i]["tools"];
+          link = Projects[i]["link"];
+          var proj = $.fn.get_project(title, description, tools, link, i);
+          parent.append(proj);
+      }
+    }
+
+    $.fn.render_projects();
     $.fn.add_event();
 
 });
