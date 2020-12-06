@@ -54,12 +54,13 @@ $(document).ready(function(){
              // link: "https://hammad214508.github.io/Hiring-Game/"
          },
          {
-             title:"Hiring Manager Game <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
+             title:"MiniC Compiler",
              description:
-                "A simple clicking game in which you are the hiring manager and you can hire interns, software engineers or senior "+
-                "engineers. Goal is to be efficient managing their cost and value. New competitive mode added",
-             tools:"jQuery, HTML, CSS",
-             link: "https://hammad214508.github.io/Hiring-Game/"
+                "Developed a recursive descent parser for a subset of the C programming language. "+
+                "The main components were lexing, parsing and intermediate code generation. The compiler "+
+                "gave syntax and semantic errors when necessary.",
+             tools:"C, C++, LLVM",
+             // link: ""
          },
          {
              title:"Database System for a Department Store",
@@ -75,8 +76,16 @@ $(document).ready(function(){
                  "This program is an intrusion detection system that produces a report of all the "+
                  "malicious activity detected when the program exits. This includes SYN attack detection, "+
                  "ARP poisoning attack and blacklisted URL detection.",
-             tools:"C",
+             tools:"C, Python",
              // link:"Projects/intrusion_detection.html"
+         },
+         {
+             title:"Hiring Manager Game <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
+             description:
+                "A simple clicking game in which you are the hiring manager and you can hire interns, software engineers or senior "+
+                "engineers. Goal is to be efficient managing their cost and value. New competitive mode added",
+             tools:"jQuery, HTML, CSS",
+             link: "https://hammad214508.github.io/Hiring-Game/"
          },
          {
              title:"Resolution proof solver",
@@ -162,9 +171,11 @@ $(document).ready(function(){
      $.fn.add_event = function(){
          $('.white-box').on('click',function() {
              if ($(this).attr('href') != "undefined"){
-                 window.location.href = $(this).attr('href');
+                 // window.location.href = $(this).attr('href');
+                 window.open($(this).attr('href'), '_blank');
              }
-         })
+         });
+
          $('.white-box').hover(function(){
            $(this).css("background-color", "#DCDCDC");
            }, function(){
