@@ -27,14 +27,20 @@ $(document).ready(function(){
              link: "https://github.com/Hammad214508/Blog-Application"
          },
          {
-             title:"Meme Maker <i class=\"fa fa-github-square\"></i>",
+             title:"Restaurant and Food Recommender <i class=\"fa fa-github-square\"></i>",
              description:
-                "I made a meme maker using Python, given a set of templates and fonts, it"+
-                "can generate memes based on the user input. "+
-                "A modification of this (branch on git) was used in a WhatsApp bot for a friend.",
-             tools:"Python",
-             link: "https://github.com/Hammad214508/Meme-maker"
-
+                "Web application that helps users decide where and what to eat using machine learning "+
+                "techniques. Extended so that it can handle a group of users wanting to eat together.",
+             tools:"Python, PHP, MySQL, jQuery, HTML & CSS",
+             link: "https://github.com/Hammad214508/Restaurant-And-Food-recommender"
+         },
+         {
+             title:"Shopping System <i class=\"fa fa-github-square\"></i> <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
+             description:
+                "I evaluated and redesigned the user interface for an online shopping system using "+
+                "guideline based evaluation and following Nielsen's Usability Heuristics for User Interface Design",
+             tools:"PHP, Javascript, HTML, CSS",
+             link: "https://github.com/Hammad214508/Shopping-System"
          },
          {
              title:"Derivative Trade Application",
@@ -46,12 +52,22 @@ $(document).ready(function(){
              // link: "derivate_trade.html"
          },
          {
-             title:"Restaurant and Food Recommender",
+             title:"Meme Maker <i class=\"fa fa-github-square\"></i>",
              description:
-                "Web application that helps users decide where and what to eat using machine learning "+
-                "techniques. Extended so that it can handle a group of users wanting to eat together.",
-             tools:"Python, PHP, MySQL, jQuery, HTML & CSS",
-             // link: "https://hammad214508.github.io/Hiring-Game/"
+                "I made a meme maker using Python, given a set of templates and fonts, it"+
+                "can generate memes based on the user input. "+
+                "A modification of this (branch on git) was used in a WhatsApp bot for a friend.",
+             tools:"Python",
+             link: "https://github.com/Hammad214508/Meme-maker"
+
+         },
+         {
+             title:"Hiring Manager Game <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
+             description:
+                "A simple clicking game in which you are the hiring manager and you can hire interns, software engineers or senior "+
+                "engineers. Goal is to be efficient managing their cost and value. New competitive mode added",
+             tools:"jQuery, HTML, CSS",
+             link: "https://hammad214508.github.io/Hiring-Game/"
          },
          {
              title:"MiniC Compiler",
@@ -78,14 +94,6 @@ $(document).ready(function(){
                  "ARP poisoning attack and blacklisted URL detection.",
              tools:"C, Python",
              // link:"Projects/intrusion_detection.html"
-         },
-         {
-             title:"Hiring Manager Game <i class=\"fa fa-link\" aria-hidden=\"true\"></i>",
-             description:
-                "A simple clicking game in which you are the hiring manager and you can hire interns, software engineers or senior "+
-                "engineers. Goal is to be efficient managing their cost and value. New competitive mode added",
-             tools:"jQuery, HTML, CSS",
-             link: "https://hammad214508.github.io/Hiring-Game/"
          },
          {
              title:"Resolution proof solver",
