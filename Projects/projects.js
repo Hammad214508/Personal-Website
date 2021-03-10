@@ -164,10 +164,10 @@ $(document).ready(function(){
              "<div id='project_"+i+"' class=\"col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 bottom-buffer\">"+
              "  <div class=\"white-box\" href=\""+link+"\">"+
              "      <h3>"+title+"</h3>"+
-             "      <p>"+
+             "      <p style=\"height:6.9em; overflow-y: scroll;\">"+
              "           "+description+""+
              "      </p>"+
-             "      <div class=\"tools\">"+
+             "      <div class=\"tools mt-1\" style='position: absolute; bottom: 10px;'>"+
              "          <p> &lt; &gt; "+tools+"</p>"+
              "      </div>"+
              "  </div>"+
