@@ -18,7 +18,7 @@ $(document).ready(function(){
      var Projects =
      [
          {
-             title:"Blog App <i href='https://github.com/Hammad214508/Blog-Application' class=\"fa fa-github-square git-link \"></i> <i href=\"https://hammad-blog-app.herokuapp.com/\" class=\"fa fa-link link-url\" aria-hidden=\"true\"></i>",
+             title:"Blog App <i href='https://github.com/Hammad214508/Blog-Application' class=\"fa fa-github-square project_icon \"></i> <i href=\"https://hammad-blog-app.herokuapp.com/\" class=\"fa fa-link project_icon link_icon\" aria-hidden=\"true\"></i>",
              description:
                  "Developed a full-featured web application using Django framework and Python. "+
                  "It is a social media styled application where different users can post e.g. blog "+
@@ -26,14 +26,14 @@ $(document).ready(function(){
              tools:"Python, Django, SQL, HTML, CSS",
          },
          {
-             title:"Restaurant and Food Recommender <i href=\"https://github.com/Hammad214508/Restaurant-And-Food-recommender\" class=\"fa fa-github-square git-link\"></i>",
+             title:"Restaurant and Food Recommender <i href=\"https://github.com/Hammad214508/Restaurant-And-Food-recommender\" class=\"fa fa-github-square project_icon\"></i>",
              description:
                 "Web application that helps users decide where and what to eat using machine learning "+
                 "techniques such as collaborative filtering. Extended to work for a group of users wanting to eat together.",
              tools:"Python, PHP, MySQL, jQuery, HTML & CSS",
          },
          {
-             title:"Shopping System <i href=\"https://github.com/Hammad214508/Shopping-System\" class=\"fa fa-github-square git-link\"></i> <i href=\"https://eveg-1814453.000webhostapp.com/\" class=\"fa fa-link link-url\" aria-hidden=\"true\"></i>",
+             title:"Shopping System <i href=\"https://github.com/Hammad214508/Shopping-System\" class=\"fa fa-github-square project_icon\"></i> <i href=\"https://eveg-1814453.000webhostapp.com/\" class=\"fa fa-link project_icon link_icon\" aria-hidden=\"true\"></i>",
              description:
                 "Evaluated and redesigned the user interface for an online shopping system using "+
                 "guideline based evaluation and following Nielsen's Usability Heuristics for User Interface Design.",
@@ -48,7 +48,7 @@ $(document).ready(function(){
              tools:"Python, Django, SQL, HTML, CSS",
          },
          {
-             title:"Meme Maker <i href=\"https://github.com/Hammad214508/Meme-maker\" class=\"fa fa-github-square git-link\"></i>",
+             title:"Meme Maker <i href=\"https://github.com/Hammad214508/Meme-maker\" class=\"fa fa-github-square project_icon \"></i>",
              description:
                 "Command line meme maker using Python, it "+
                 "can generate memes from the user input and was developed to contribute in an open source "+
@@ -57,7 +57,7 @@ $(document).ready(function(){
 
          },
          {
-             title:"Hiring Game <i href=\"https://github.com/Hammad214508/Hiring-Game\" class=\"fa fa-github-square git-link\"></i> <i href=\"https://hammad214508.github.io/Hiring-Game/\" class=\"fa fa-link link-url\" aria-hidden=\"true\"></i>",
+             title:"Hiring Game <i href=\"https://github.com/Hammad214508/Hiring-Game\" class=\"fa fa-github-square project_icon\"></i> <i href=\"https://hammad214508.github.io/Hiring-Game/\" class=\"fa fa-link project_icon link_icon\" aria-hidden=\"true\"></i>",
              description:
                 "A simple clicking game in which you are the hiring manager and you can hire interns, software engineers or senior "+
                 "engineers. Goal is to be efficient managing their cost and value. A competitive mode is also present.",
@@ -103,7 +103,7 @@ $(document).ready(function(){
              tools:"JavaCC",
          },
          {
-             title:"Snake Game for Mathematics Revision",
+             title:"Snake Game for Mathematics Revision <i href=\"https://drive.google.com/file/d/1sIUKzm1TrzdEOAfWT9f1_xCgQLIhv-D2/view?usp=sharing\" class=\"fa fa-file-pdf-o project_icon\"></i>",
              description:
                   "Developed a snake game (Nokia phone game alike, but with many more features) with A-Level Mathematics questions, "+
                   "making it a fun learning tool for students struggling with this subject.",
@@ -160,13 +160,8 @@ $(document).ready(function(){
 
 
      $.fn.add_event = function(){
-         $('.git-link').on('click',function() {
-             if ($(this).attr('href') != "undefined"){
-                 window.open($(this).attr('href'), '_blank');
-             }
-         });
 
-         $('.link-url').on('click',function() {
+         $('.project_icon').on('click',function() {
              if ($(this).attr('href') != "undefined"){
                  window.open($(this).attr('href'), '_blank');
              }

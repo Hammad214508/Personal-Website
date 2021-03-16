@@ -43,20 +43,14 @@ body {
     height: 17em;
 }
 
-
-.git-link:hover{
-  color: #696969;
-  cursor: pointer;
-}
-
-.link-url{
+.link_icon{
   font-size: 20px;
 }
-
-.link-url:hover{
+.project_icon:hover{
   color: #696969;
   cursor: pointer;
 }
+
 
 .tools{
     border-radius: 25px;
