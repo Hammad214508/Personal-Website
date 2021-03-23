@@ -283,3 +283,7 @@ body {
   background: #444;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
 }
+
+.no_margin{
+  margin : 0px;
+}
