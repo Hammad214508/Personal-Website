@@ -151,7 +151,7 @@ $(document).ready(function(){
              "           "+description+""+
              "      </p>"+
              "      <div class=\"tools\" style='position: absolute; bottom: 10px;'>"+
-             "          <p> &lt; &gt; "+tools+"</p>"+
+             "          <p> <i class=\"fa fa-code\"></i> "+tools+"</p>"+
              "      </div>"+
              "  </div>"+
              "</div>";
