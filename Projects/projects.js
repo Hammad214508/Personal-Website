@@ -26,7 +26,7 @@ $(document).ready(function(){
              tools:"Python, Django, SQL, HTML, CSS",
          },
          {
-             title:"Restaurant and Food Recommender <i href=\"https://github.com/Hammad214508/Restaurant-And-Food-recommender\" class=\"fa fa-github-square project_icon\"></i>",
+             title:"Restaurant and Food Recommender <i href=\"https://github.com/Hammad214508/Restaurant-And-Food-recommender\" class=\"fa fa-github-square project_icon\"></i> <i href=\"https://drive.google.com/file/d/1L3rLqzHODylY8u2rzIo6tUiNzQx7VwMq/view?usp=sharing\" class=\"fa fa-file-pdf-o project_icon\"></i>",
              description:
                 "Web application that helps users decide where and what to eat using machine learning "+
                 "techniques such as collaborative filtering. Extended to work for a group of users wanting to eat together.",
