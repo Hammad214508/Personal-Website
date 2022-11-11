@@ -54,7 +54,13 @@ $(document).ready(function(){
                 "can generate memes from the user input and was developed to contribute in an open source "+
                 "WhatsApp bot to make and send memes automatically from the messages.",
              tools:"Python",
-
+         },
+         {
+             title:"Whale Alert <i href=\"https://github.com/Hammad214508/Whale-Alert\" class=\"fa fa-github-square project_icon\"></i>",
+             description:
+                "This script enables you to track a crypto address' activity by giving real time updates about transactions performed by their address. "+
+                "It webcraps BitInfoCharts every 5 minutes and uses BotFather to notify on Telegram.",
+             tools:"Python, Beautiful Soup, BotFather",
          },
          {
              title:"Hiring Game <i href=\"https://github.com/Hammad214508/Hiring-Game\" class=\"fa fa-github-square project_icon\"></i> <i href=\"https://hammad214508.github.io/Hiring-Game/\" class=\"fa fa-link project_icon link_icon\" aria-hidden=\"true\"></i>",
